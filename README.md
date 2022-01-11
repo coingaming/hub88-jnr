@@ -11,6 +11,9 @@ Imagine you are consulting for a new game provider that just on-boarded on Hub88
 
 * Deliver your solution via git repository
 * Implement the necessary endpoints in your prefer langugae of choice and be ready to present your solution to the team
+* Implement at least two (2) endpoints
 * Your solution should be testable
-* 
+
+
+If you require further clarification, don't hesistate to be in touch with the recruitment team.
 
