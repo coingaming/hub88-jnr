@@ -4,24 +4,39 @@ As a Hub88 developer, you will be interacting directly with the Hub88 APIs, the 
 
 An "Operator" needs to implement the API defined by the [Operator Documentation](https://hub88.io/docs/operator) to handle received requests from Game providers via Hub88.
 
-**To test your skills, you need to develop your own Operator's _"Wallet API"_ service implementation**
+**To test your skills, you need to develop your own Operator's _"Wallet API"_ service implementation for the following endpoints**
+
+#### `/user/balance`
+- user's balance should be returned.
+- If user doesn't exist in the system, this endpoint should create new user with balance of `1000` in `EUR` currency.
+#### `/transaction/bet`
+- user's balance should be decreased by the given `amount`.
+- request should be validated properly, before processing it.
+- Appropriate error should be returned incase of invalid requests.
+#### `/transaction/win`
+- user's balance should be increased by the given `amount`
+- win request should have valid bet transaction(`reference_transaction_uuid`)
+- Appropriate error should be returned incase of invalid requests
 
 ### Please be strict to the following development guidelines:
 - Keep it simple;
-- The technologies and languages are open. Choose the most comfortable stack based on your own experience;
+- Should be written in Elixir [Phoenix framework](https://hexdocs.pm/phoenix/overview.html);
+- You can choose database, dependencies on your preference;
 - Do **NOT** implement the request's "signature" requirements;
+- Authentication is not mandatory. But would be nice to have [Basic Authentication](https://swagger.io/docs/specification/2-0/authentication/basic-authentication/) for those endpoints;
 - Implement the transactions endpoints properly, including corner-cases;
+- Transaction should be idempotent. meaning that the same transaction cannot be processed multiple times;
 - Ensure that your source code is clean and readable;
+- Your code must be on GitHub as a private repository. Send an invite to [@segaz2002 and @gokul-poongodi](https://github.com/segaz2002, https://github.com/gokul-poongodi)
 
 **Note:** There are no explicit deadlines. However, do note that proceeding with your challenge is subject to the availability of the position.
 Keep in touch with the recruitment contact to plan your delivery.
 
-On completion, publish (publicly) your solution to any git cloud server of your choice (ex: GitHub, GitLab, BitBucket) and share the link with the recruitment contact; After sharing your project, we will schedule your presentation/evaluation meeting.
+After sharing your project, we will schedule your presentation/evaluation meeting.
 
 ### Please be strict to the following presentation guidelines:
 - Keep it simple;
 - Start by performing a live demo of your solution;
-- Next, explain why you chose the language(s), framework(s), and other technologies;
 - Finally, explain how your API works while showing the project's source code in an editor/IDE of your choice;
 - Be ready to answer technical questions related to your project.
 
