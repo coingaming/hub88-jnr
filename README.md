@@ -27,7 +27,7 @@ An "Operator" needs to implement the API defined by the [Operator Documentation]
 - Implement the transactions endpoints properly, including corner-cases;
 - Transaction should be idempotent. meaning that the same transaction cannot be processed multiple times;
 - Ensure that your source code is clean and readable;
-- Your code must be on GitHub as a private repository. Send an invite to [@segaz2002 and @gokul-poongodi](https://github.com/segaz2002, https://github.com/gokul-poongodi)
+- Your code must be on GitHub as a private repository. Send an invite to [@bit4bit, @shegx01, @gokul-poongodi, @lenileiro, @masudme09, @VigneshwaranSenthilvel]
 
 **Note:** There are no explicit deadlines. However, do note that proceeding with your challenge is subject to the availability of the position.
 Keep in touch with the recruitment contact to plan your delivery.
